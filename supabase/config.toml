@@ -1,0 +1,12 @@
+project_id = "digipass"
+
+# These functions do their own auth (pass tokens / Apple's ApplePass header / user JWT),
+# because Apple devices and plain link navigations can't send a Supabase JWT.
+[functions.apple-wallet]
+verify_jwt = false
+
+[functions.google-wallet]
+verify_jwt = false
+
+[functions.pass-updated]
+verify_jwt = false

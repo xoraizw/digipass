@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+supabase/.temp
+supabase/functions/.env
+*.pem
+*.p12
+*.cer
+deno.lock
